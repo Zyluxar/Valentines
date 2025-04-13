@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Be my Valentine</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Press Start 2P"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="heart.svg" />
+    <style>
+      body {
+        background-color: #ede1df;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      h1 {
+        font-family: "Press Start 2P";
+        font-size: 22px;
+        text-align: center;
+        display: block;
+      }
+
+      #buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      button {
+        font-family: "Inter";
+        font-weight: 700;
+        color: black;
+        border-radius: 0;
+        margin: 10px;
+        border: none;
+        cursor: pointer;
+        width: 15vw;
+        height: 10vh;
+        font-size: 40px;
+        max-width: 645.008px;
+      }
+
+      #yes {
+        background-color: #46cb44;
+      }
+
+      #no {
+        background-color: rgb(203, 68, 68);
+      }
+    </style>
+  </head>
+  <body>
+    <img src="image01.png" id="image" />
+    <h1 id="question">Will you be my valentine?</h1>
+    <div id="buttons">
+      <button id="yes" onclick="yes()">Yes</button>
+      <button id="no" onclick="no()">No</button>
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>
